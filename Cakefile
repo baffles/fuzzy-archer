@@ -19,7 +19,7 @@ copyLib = (notify = false) ->
 		console.log "#{(new Date).toLocaleTimeString()} - copied lib" if notify
 
 task 'build', 'build extension', (options) ->
-	fs.mkdirSync 'build'
+	fs.mkdirsSync 'build'
 
 	exec "coffee -bco build/ coffee/", (err, stdout, stderr) ->
 		throw err if err
@@ -34,7 +34,7 @@ task 'sbuild', 'build extension', (options) ->
 	invoke 'build'
 
 task 'watch', 'watches for changes in source files', (options) ->
-	fs.mkdirSync 'build'
+	fs.mkdirsSync 'build'
 
 	coffee = spawn 'coffee', ['-wbco', 'build/', 'coffee/']
 
