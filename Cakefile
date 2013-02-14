@@ -2,7 +2,7 @@
 path = require 'path'
 util = require 'util'
 cson = require 'cson'
-fs = require 'fs-extra'
+fs = require 'fs'
 
 #
 # Generate manifest.json from manifest.cson (CoffeeScript JSON)
