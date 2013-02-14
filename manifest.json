@@ -1,0 +1,10 @@
+{
+  "name": "The Daily WTF Commentator",
+  "description": "Shows hidden comments on articles on thedailywtf.com.",
+
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "permissions": [
+  ]
+}
