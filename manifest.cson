@@ -1,0 +1,14 @@
+{
+  name: "Fuzzy Archer"
+  description: "Occasionally, authors on thedailywtf.com insert hidden comments. This extension shows them."
+
+  version: "1.0"
+  manifest_version: 2
+
+  content_scripts: [
+  	{
+  		matches: [ "http://thedailywtf.com/*", "https://thedailywtf.com/*", "http://www.thedailywtf.com/*", "https://www.thedailywtf.com/*" ]
+  		js: []
+  	}
+  ]
+}
