@@ -13,10 +13,9 @@ The name generator on GitHub spit it out, so I used it!
 
 ## Building
 
-To build from source, you'll need to have `CoffeeScript` (which requires `node.js`), `cson`, and `node-fs-extra`
-installed.
+To build from source, you'll need to have `CoffeeScript` (which requires `node.js`), and `cson` installed.
 
 You'll probably want `CoffeeScript` installed globally, so you can just run `coffee` and `cake. The other required
-modules may be installed locally using `npm install cson fs-extra`.
+modules may be installed locally using `npm install cson`.
 
 To build, execute `cake build`. To automatically re-build as you edit, execute `cake watch`.
