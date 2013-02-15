@@ -1,7 +1,7 @@
 # Pretty simple... on load, go through and rewrite comments
 
 $ () ->
-	$comments = $('.ArticleBody').find('*').contents().filter () -> @nodeType is 8
+	$comments = $('#ArticleFull,.ArticleBody,.ArticleContainer').find('*').contents().filter () -> @nodeType is 8
 	for c in $comments
 		$display = $("<span>")
 		$display.append $("<span>").text("<!-- ").css('color', 'darkgray')
